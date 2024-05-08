@@ -1,0 +1,115 @@
+.header-mobile-button {
+    width: 50px;
+    height: 30px;
+    .button {
+        cursor: pointer;
+        .header-mobile-line-1,
+        .header-mobile-line-2,
+        .header-mobile-line-3 {
+            width: 100%;
+            height: 4px;
+            background: white;
+            border-radius: 10px;
+            margin: 10px 0px;
+            transition: all .5s ease;
+        }
+    }
+
+    .active {
+        .header-mobile-line-2 {
+            opacity: 0;
+            transform: rotateY(100deg);
+        }
+
+        .header-mobile-line-1 {
+            transform: translateY(14px) rotate(225deg) rotateY(25deg);
+        }
+
+        .header-mobile-line-3 {
+            transform: translateY(-14px) rotate(-225deg) rotateY(-25deg);
+        }
+    }
+}
+
+.header-mobile {
+    margin-left: -500px;
+    z-index: 1000;
+    position: fixed;
+    width: 300px;
+    background: rgba(0,0,0,.8);
+    height: 100vh;
+    transition: margin .5s ease;
+
+    .language-switcher {
+        margin: 20px 0px;
+        .buttons {
+            flex-direction: row !important;
+        }
+    }
+
+    .header-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        .logo {
+            font-size: 25px;
+            padding: 10px 0px;
+            text-align: center;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+
+            .button {
+                display: flex;
+                flex-direction: column;
+
+                .link-block {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    .link {
+                        color: white;
+                        font-size: 20px;
+                        margin: 0px 10px;
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        border-bottom: 2px solid rgba(255, 255, 255, 0);
+                        transition: border .5s ease;
+                    }
+
+                    img {
+                        transform: rotate(90deg);
+                        height: 30px;
+                        margin: 10px 20px;
+                        transition: transform .5s ease;
+                    }
+                }
+
+                .subcategories-mobile {
+                    height: 0px;
+                    display: flex;
+                    z-index: 1000;
+                    background: rgba(0,0,0,.5);;
+                    flex-direction: column;
+                    transition: height .5s ease;
+                    overflow: auto;
+
+                    a {
+                        color: white;
+                        margin: 5px 0px;
+                        padding: 5px 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

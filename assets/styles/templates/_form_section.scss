@@ -1,0 +1,67 @@
+.form-section {
+    background: $ebony;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+    .title {
+        margin: 25px 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+
+    .success-send {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        font-weight: bold;
+        background: #28a745;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    form {
+        margin: 20px 0px;
+        width: 50%;
+
+        .form-group {
+            margin: 30px 0px;
+
+            label {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .input-error {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 25px;
+                font-weight: bold;
+                background: $sunset-red-base;
+                color: white;
+            }
+
+            input {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            textarea {
+                font-weight: bold;
+            }
+        }
+
+        button {
+            width: 100%;
+            color: white;
+            background: $sunset-red-base;
+            font-weight: bolder;
+        }
+    }
+}

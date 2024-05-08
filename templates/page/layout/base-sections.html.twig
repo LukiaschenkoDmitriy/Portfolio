@@ -1,0 +1,77 @@
+{% set section_keys = sections|keys %}
+{% set section_index = 0 %}
+
+{% for section in sections %}
+    {% set title = section.title %}
+    {% set description = section.description %}
+
+    {% set section_key = section_keys[section_index] %}
+
+    {% include '/page/layout/section-styles.html.twig' %}
+
+    <div class="section section-{{ section_key }}" id="{{ section.section_id }}">
+        {% if section.background.image is defined and section.background.image is not null and section.background.image != "" %}
+            {% block section_image %}
+                <img class="{{ section_key }}-section-background section-background" src="{{ asset(section.background.image) }}" alt="">
+            {% endblock %}
+        {% endif %}
+        <div class="container">
+            <div class="container-wrapper">
+                {% if section.icon is defined and section.icon is not null and section.icon != "" %}
+                    {% block section_icon %}
+                        <div class="icon icon-{{section_key}}">
+                            <img src="{{ asset(section.icon) }}" alt="">
+                        </div>
+                    {% endblock %}
+                {% endif %}
+                {% block section_title %}
+                    <div class="section-title {{section_key}}-title">{{ title }}</div>
+                {% endblock %}
+                {% block section_underline_first %}
+                    <div class="underline underline-little {{section_key}}-underline"></div>
+                {% endblock %}
+                {% block section_undefline_second %}
+                    <div class="underline underline-big {{section_key}}-underline"></div>
+                {% endblock %}
+                {% block section_description %}
+                    <div class="section-description {{section_key}}-description">{{ description }}</div>
+                {% endblock %}
+                {% block section_underline_third %}
+                    <div class="underline underline-medium {{section_key}}-underline"></div>
+                {% endblock %}
+                {% if section.media is defined and section.media is not null %}
+                    <img class="section-image {{section_key}}-image" src="{{ asset(section.media) }}" alt="">
+                {% endif %}
+                {% if section.columns is defined and section.columns is not null %}
+                    {% block section_columns %}
+                        <div class="section-rows">
+                            {% for column in section.columns %}
+                                <div class="section-row row">
+                                    {% block section_columns_name %}
+                                        <div class="row-name col-sm">{{ column.title }}</div>
+                                    {% endblock %}
+                                    {% block section_columns_value %}
+                                        <div class="row-value col-sm">{{ column.rate }}/10</div>
+                                    {% endblock %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endblock %}
+                {% endif %}
+                {% if section.level is defined and section.level is not null %}
+                    {% block section_level %}
+                        <div class="level level-{{section_key}}">
+                            <div>{{ section.level }}/10</div>
+                        </div>
+                    {% endblock %}
+                {% endif %}
+                {% if section.github is defined and section.github is not null and section.github != "" %}
+                    {% block section_github %}
+                        <a href="{{ section.github }}" class="github-link" target="_blank">GitHub</a>
+                    {% endblock %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% set section_index = section_index + 1 %}
+{% endfor %}

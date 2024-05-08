@@ -1,0 +1,10 @@
+<div class="right-tab">
+    {% set page = context["contact"] %}
+    <div class="sections">
+        <div class="sections-wrapper">
+            {% for section in page.sections %}
+                <a href="{% if section.type == "phone" %}tel:{% endif %}{% if section.type == "email" %}mailto:{% endif %}{{ section.url }}" target="_blank">{{ section.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

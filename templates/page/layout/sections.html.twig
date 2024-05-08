@@ -1,0 +1,5 @@
+{% if page.type is defined and page.type == "slider" %}
+    {% include 'page/layout/slider-sections.html.twig' %}
+{% else %}
+    {% include 'page/layout/base-sections.html.twig' %}
+{% endif %}

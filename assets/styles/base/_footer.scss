@@ -1,0 +1,30 @@
+.footer {
+    border-top: 2px solid $sunset-red-base;
+    background: $ebony;
+    z-index: 1000;
+
+    .footer-wrapper {
+        padding: 50px 0px;
+        .button-footer-link {
+            text-align: center;
+            .link {
+                color: $sunset-red-base;
+                font-size: 20px;
+                font-weight: bold;;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                a {
+                    display: block;
+                    color: white;
+                    margin: 5px 0px;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

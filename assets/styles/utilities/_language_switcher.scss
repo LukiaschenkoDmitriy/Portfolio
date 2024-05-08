@@ -1,0 +1,23 @@
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        a {
+            margin: 0px 10px;
+            text-decoration: none;
+            color: white;
+            background: $ebony;
+            border-radius: 6px;
+            padding: 5px 10px;
+        }
+
+        .active {
+            background: $sunset-red-base;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<div class="main-section main-section-{{ key }}">
+    <img class="{{ key }}-background background" src="{{ asset(page.background) }}" alt="">
+    <div class="container">
+        <div class="{{ key }}-container-wrapper container-wrapper">
+            <div class="description">
+                {% if page.is_separate is defined and page.is_separate is not null and page.is_separate %}
+                    {% set descriptionParts = page.description|split("/") %}
+                    <strong class="description_about">
+                        
+                    </strong>
+
+                    <script>
+                        var typed = new Typed('.description_about', {
+                            strings: [
+                                '{{ descriptionParts[0] }} <strong class="name"> {{ descriptionParts[1] }}</strong> {{ descriptionParts[2] }}<strong class="work"> {{ descriptionParts[3] }} </strong>{{ descriptionParts[4] }}',
+                            ],
+                            typeSpeed: 70
+                        });
+                    </script>
+                {% else %}
+                    <strong class="default_main_description">{{ page.description }}</strong>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

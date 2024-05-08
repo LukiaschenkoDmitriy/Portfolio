@@ -1,0 +1,79 @@
+{% set section_keys = sections|keys %}
+{% set section_index = 0 %}
+
+{% set elementIdFocus = null %}
+
+<div class="slider-sections">
+    <div class="container-slider-wrapper splide">
+        {% include 'page/component/slider-arrow.html.twig' %}
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for section in sections %}
+                    {% set title = section.title %}
+                    {% set description = section.description %}
+
+                    {% set section_key = section_keys[section_index] %}
+                    <li class="splide__slide">
+                        <div class="section section-{{ section_key }}" id="{{ section.section_id }}">
+                            {% set title = section.title %}
+                            {% set description = section.description %}
+
+                            {% set section_key = section_keys[section_index] %}
+
+                            {% include '/page/layout/section-styles.html.twig' %}
+
+                            {% if section.background.image is defined and section.background.image is not null and section.background.image != "" %}
+                                <img class="{{ section_key }}-section-background section-background" src="{{ asset(section.background.image) }}" alt="">
+                            {% endif %}
+                            <div class="container">
+                                <div class="container-wrapper">
+                                    {% if section.icon is defined and section.icon is not null and section.icon != "" %}
+                                        <div class="icon icon-{{section_key}}">
+                                            <img src="{{ asset(section.icon) }}" alt="">
+                                        </div>
+                                    {% endif %}
+                                    <div class="section-title {{section_key}}-title">{{ title }}</div>
+                                    <div class="underline underline-little {{section_key}}-underline"></div>
+                                    <div class="underline underline-big {{section_key}}-underline"></div>
+                                    <div class="section-description {{section_key}}-description">{{ description }}</div>
+                                    <div class="underline underline-medium {{section_key}}-underline"></div>
+                                    {% if section.media is defined and section.media is not null %}
+                                        <img class="section-image {{section_key}}-image" src="{{ asset(section.media) }}" alt="">
+                                    {% endif %}
+                                    {% if section.columns is defined and section.columns is not null %}
+                                        <div class="section-rows">
+                                            {% for column in section.columns %}
+                                                <div class="section-row row">
+                                                    <div class="row-name col-sm">{{ column.title }}</div>
+                                                    <div class="row-value col-sm">{{ column.rate }}/10</div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                    {% if section.level is defined and section.level is not null %}
+                                        <div class="level level-{{section_key}}">
+                                            <div>{{ section.level }}/10</div>
+                                        </div>
+                                    {% endif %}
+                                    {% if section.github is defined and section.github is not null and section.github != "" %}
+                                        <a href="{{ section.github }}" class="github-link" target="_blank">GitHub</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {% set section_index = section_index + 1 %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% if section_id is defined and section_id != null %}
+    <script>
+        window.addEventListener('load', function() {
+            window.sliderControll.goToSlider({{section_id|number_format}});
+            window.sliderControll.smoothSwithToElementBySliderIndex({{section_id|number_format}});
+        });
+    </script>
+{% endif %}

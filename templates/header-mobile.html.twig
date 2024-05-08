@@ -1,0 +1,55 @@
+<nav id="header-mobile" class="header-mobile">
+    <div class="header-container-wrapper">
+        <div class="logo"><a href="/">Portfolio</a></div>
+        <div class="buttons">
+            {% for page in context.header %}
+                <div id="header-button-mobile" class="button button-header-link">
+                    <div class="link-block">
+                        {% if page.sections is defined and page.sections is not null%}
+                            <p class="link">{{ page.title }}</p>
+                            <img id="mobile-cursor" class="mobile-cursor" src="{{ asset("/images/icons/arrow-icon.png") }}" alt="">
+                        {% else %}
+                            <a class="link" href="{{ path(page.router) }}">{{ page.title }}</a>
+                        {% endif %}
+                    </div>
+                    {% if page.sections is defined %}
+                        <div class="subcategories-mobile subcategories-mobile" id="subcategories-mobile">
+                            {% if page.type is defined and page.type == "slider" %}
+                                {% set section_index = 0 %}
+                                {% for section in page.sections %}
+                                    <a href="{{ path(page.router ~ ".index", {"id": section_index}) }}">{{ section.title }}</a>
+                                    {% set section_index = section_index + 1 %}
+                                {% endfor %}
+                            {% else %}
+                                {% for section in page.sections %}
+                                    <a href="{{ path(page.router) }}#{{ section.section_id }}">{{ section.title }}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            {% set page = context.contact %}
+            <div id="header-button-mobile" class="button button-header-link">
+                <div class="link-block">
+                    {% if page.sections is defined and page.sections is not null%}
+                        <p class="link">{{ page.title }}</p>
+                        <img id="mobile-cursor" class="mobile-cursor" src="{{ asset("/images/icons/arrow-icon.png") }}" alt="">
+                    {% else %}
+                        <a class="link" href="#">{{ page.title }}</a>
+                    {% endif %}
+                </div>
+                {% if page.sections is defined %}
+                    <div class="subcategories-mobile subcategories-mobile" id="subcategories-mobile">
+                        {% for section in page.sections %}
+                            <a href="{% if section.type == "phone" %}tel:{% endif %}{% if section.type == "email" %}mailto:{% endif %}{{ section.url }}" target="_blank">{{ section.title }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="languages">
+            {% include 'page/component/language-switcher.html.twig' %}
+        </div>
+    </div>
+</nav>

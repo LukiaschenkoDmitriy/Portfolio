@@ -1,0 +1,89 @@
+.header {
+
+    .header-mobile-button {
+        display: none;
+    }
+
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+
+    .container {
+        .header-container-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+
+            .logo {
+                font-size: 25px;
+                padding: 10px 0px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .buttons {
+                position: relative;
+                display: flex;
+
+                .button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .link {
+                        color: white;
+                        font-size: 20px;
+                        margin: 0px 10px;
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        border-bottom: 2px solid rgba(255, 255, 255, 0);
+                        transition: border .5s ease;
+                
+                        &:hover {
+                            border-bottom: 2px solid rgba(255, 255, 255, 1);
+                        }
+                    }
+
+                    .subcategories {
+                        z-index: 1000;
+                        display: flex;
+                        background: rgba(0,0,0,.5);;
+                        margin-top: 50px;
+                        position: absolute;
+                        text-align: center;
+                        flex-direction: column;
+
+                        a {
+                            color: white;
+                            margin: 5px 0px;
+                            padding: 5px 20px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        position: relative;
+        .header-mobile-button {
+            display: block;
+            position: fixed;
+            right: 10%;
+            top: 20px;
+        }
+
+        .container {
+            .header-container-wrapper {
+                display: none;
+            }
+        }
+    }
+}

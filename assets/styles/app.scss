@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import "./color";
+@import "./base/header";
+@import "./base/left_bar";
+@import "./base/right_bar";
+@import "./base/footer";
+@import "./templates/main_section";
+@import "./templates/section";
+@import "./templates/slider-section";
+@import "./utilities/termynal";
+@import "./templates/form_section";
+@import "./utilities/underline";
+@import "./utilities/language_switcher";
+@import "./base/header_mobile";
+
+body {
+    background-color: white;
+}
+
+* {
+    // font-family: "Ubuntu", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

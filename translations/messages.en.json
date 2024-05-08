@@ -1,0 +1,441 @@
+{
+    "about": {
+        "title": "About",
+        "description": "Hello, my name is / Dmytrii / and I'm a / Full-stack / developer. ",
+        "router": "app.about",
+        "background": "images/about/homebackground.png",
+        "sections": {
+            "about_me": {
+                "title": "About me",
+                "section_id": "about_me",
+                "description": "Hello! My name is Dmytrii, I'm 19 years old, and I have been enthusiastically coding for the past 4 years.",
+                "media": "images/about/photo.jpg",
+                "color": "#1E1B18",
+                "background": {
+                    "image": "",
+                    "color": "#ffffff"
+                }
+            },
+            "education": {
+                "title": "Education",
+                "section_id": "education",
+                "description": "I've been studying for 2 years at the Higher School of Enterprise and Administration in Lublin, specializing in Web Development.",
+                "media": "images/about/wspa.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "images/about/education-bg.png",
+                    "color": "#1E1B18"
+                }
+            },
+            "languages": {
+                "title": "Languages",
+                "section_id": "languages",
+                "description": "I know 4 languages, namely: Ukrainian, Russian, Polish, English.",
+                "color": "#1E1B18",
+                "background": {
+                    "image": "",
+                    "color": "#ffffff"
+                },
+                "columns": {
+                    "ukraine": {
+                        "title": "Ukraine",
+                        "rate": "9"
+                    },
+                    "russian": {
+                        "title": "Russian",
+                        "rate": "7"
+                    },
+                    "polish": {
+                        "title": "Polish",
+                        "rate": "5"
+                    },
+                    "english": {
+                        "title": "English",
+                        "rate": "4"
+                    }
+                }
+            },
+            "personal_skills": {
+                "title": "Personal Skills",
+                "section_id": "personal_skills",
+                "description": "I am responsible, attentive, and communicative.",
+                "color": "#ffffff",
+                "background": {
+                    "image": "images/about/personal-bg.png",
+                    "color": "#1E1B18"
+                },
+                "columns": {
+                    "responsibility": {
+                        "title": "Responsibility",
+                        "rate": "7"
+                    },
+                    "mindfulness": {
+                        "title": "Mindfulness",
+                        "rate": "6"
+                    },
+                    "communication": {
+                        "title": "Communication",
+                        "rate": "6"
+                    },
+                    "teamwork": {
+                        "title": "Teamwork",
+                        "rate": "7"
+                    }
+                }
+            }
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "SKILLS </>",
+        "router": "app.skills",
+        "background": "/images/skills/skills-bg.png",
+        "sections": {
+            "php": {
+                "title": "PHP",
+                "description": "Primary language. Proficient in writing optimal code with comments. Excellent knowledge of OOP and some patterns, including Singleton, Observer, Factory, Decorator. Familiar with packages such as Mercure, JWT Lexik, Symfony, Twig, Doctrine ORM, API Platform. Understanding of HTTP, HTTPS protocols, and their mechanics.",
+                "section_id": "php",
+                "icon": "/images/skills/icons/php.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "symfony": {
+                "title": "Symfony",
+                "description": "Website core. I have knowledge of how to create and configure routers, Dependency Injection, logging methods via JWT, JSON. I know how to create Doctrine ORM Entities and configure search methods for this object using Entity Repository. Combine Doctrine ORM with API Platform, rewrite API Platform routers. Know the basics of testing.",
+                "section_id": "symfony",
+                "icon": "/images/skills/icons/symfony.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            },
+            "sass": {
+                "title": "Sass",
+                "description": "The preprocessor I use with each of my projects, in some cases I combine it with the Bootstrap preprocessor and rarely with Tailwind. I am able to analyze Figma or any other website template in detail and write styles for an element on the fly that will be most effective for future page adaptation.",
+                "section_id": "sass",
+                "icon": "/images/skills/icons/sass.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "react": {
+                "title": "React",
+                "description": "Recently, I delved into the React library, motivated to learn it for my personal project—a one-page website. I have successfully integrated and utilized React with Symfony, understanding its components, templating, and routers. This combination has allowed me to craft dynamic and interactive web experiences, blending the strengths of React's frontend capabilities with Symfony's backend prowess.",
+                "section_id": "react",
+                "icon": "/images/skills/icons/react.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "2"
+            },
+            "tailwind": {
+                "title": "Tailwind",
+                "description": "I am proficient in Tailwind CSS to create modern and responsive user interfaces. With Tailwind, I can quickly create and customize UI components using utility classes, resulting in efficient and maintainable code.",
+                "section_id": "tailwind",
+                "icon": "/images/skills/icons/tailwind.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "twig": {
+                "title": "Twig",
+                "description": "Symfony Templating: I am familiar with the methods and functionalities of Symfony's templating system. I can create and apply custom functions as needed. My skills include working with lists, dictionaries, strings, and numbers within templates. I am proficient in using 'for' and 'if-else' loops to manage logic and flow in templates. Additionally, I am adept at template reuse and extension to maintain consistency and efficiency across projects.",
+                "section_id": "twig",
+                "icon": "/images/skills/icons/twig.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "scrum": {
+                "title": "Scrum",
+                "description": "I am well versed in Scrum for agile project management. With my experience in Scrum, I can manage my time and tasks efficiently, which promotes teamwork and collaboration. I also have experience using Scrum tools such as Jira to track progress and manage backlog.",
+                "section_id": "scrum",
+                "icon": "/images/skills/icons/scrum.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "6"
+            },
+            "doctrine": {
+                "title": "Doctrine",
+                "description": "I am quite familiar with Doctrine ORM as a convenient method of interacting with server-side databases in Symfony. My experience includes creating and configuring entities, repositories, and using Assert to validate data. With Doctrine ORM, I can efficiently map database tables to PHP objects, write queries using the Doctrine Query Language (DQL), and effectively manage database operations.",
+                "section_id": "doctrine",
+                "icon": "/images/skills/icons/doctrine.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            },
+            "bootstrap": {
+                "title": "BootStrap 5",
+                "description": "I am proficient in Bootstrap 5 to create responsive and visually appealing web designs. My experience includes customizing Bootstrap themes, implementing grid layouts, and ensuring cross-browser compatibility. My experience with Bootstrap 5 allows me to efficiently create elegant and responsive web applications that meet the latest web design standards.",
+                "section_id": "bootstrap",
+                "icon": "/images/skills/icons/bootstrap.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "mysql": {
+                "title": "MySQL",
+                "description": "Nearly every project requires MySQL at some stage. While I predominantly rely on Doctrine ORM for database interactions in projects, there are situations where direct MySQL queries are essential for expanding or modifying tables. Therefore, I possess the necessary MySQL knowledge for such tasks.",
+                "section_id": "mysql",
+                "icon": "/images/skills/icons/mysql.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "vuejs": {
+                "title": "VueJs",
+                "description": "I focused on studying Vue.js specifically for the Shopware framework, which utilizes Vue.js for its admin panel. There were occasions where I needed to either rewrite or develop new plugins for the admin panel, thus I have acquired the necessary expertise in working with Vue.js.",
+                "section_id": "vuejs",
+                "icon": "/images/skills/icons/vuejs.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "2"
+            },
+            "git": {
+                "title": "Git",
+                "description": "I have basic knowledge of Git for version control, which allows me to effectively collaborate and track changes in the project. I can easily handle tasks such as rebasing, fetching, and creating pull requests to optimize the development process.",
+                "section_id": "git",
+                "icon": "/images/skills/icons/git.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "shopware": {
+                "title": "Shopware 6",
+                "description": "I have experience with Shopware 6, which encompasses skills such as creating new 'storefront' templates, rewriting existing ones, developing plugins, configuring routers, and managing database interactions. This experience has allowed me to build custom solutions tailored to specific project needs within the Shopware ecosystem.",
+                "section_id": "shopware",
+                "icon": "/images/skills/icons/shopware.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "docker": {
+                "title": "Docker",
+                "description": "In Docker, I possess fundamental skills such as building images with Dockerfiles, managing containers, understanding container networking and volumes. I can create Docker Compose files for multi-container setups, pull and push images from Docker Hub.",
+                "section_id": "docker",
+                "icon": "/images/skills/icons/docker.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "2"
+            },
+            "apiplatform": {
+                "title": "ApiPlatform",
+                "description": "My knowledge of API Platform in Symfony includes understanding RESTful API design principles, creating API endpoints using annotations, managing data models using Doctrine ORM, serializing and deserializing data using Serializer in Symfony, configuring pagination, filtering and sorting API responses, implementing authentication and authorization.",
+                "section_id": "apiplatform",
+                "icon": "/images/skills/icons/apiplatform.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "typescript": {
+                "title": "TypeScript",
+                "description": "In TypeScript, I have developed proficiency in writing type-safe code to catch errors during development. I can define interfaces and types for complex data structures, utilize TypeScript features such as enums, generics, and decorators, and integrate TypeScript seamlessly with frameworks like React and VueJs. Additionally, I leverage TypeScript's benefits for large-scale applications, improving code quality and developer productivity.",
+                "section_id": "typescript",
+                "icon": "/images/skills/icons/typescript.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            }
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "router": "app.projects",
+        "background": "/images/projects-bg.png",
+        "description": "PROJECTS </>",
+        "sections": {
+            "site_card": {
+                "title": "Site Card",
+                "description": "My first project on Symfony. A portfolio website. Technologies used: Symfony, Doctrine ORM, Twig, SASS, Tailwind, JQuery, AnimeJs. Challenges I could have faced: Understanding the Symfony framework and its components might have been challenging. To overcome this, I extensively studied Symfony's documentation, Integrating SASS, Tailwind, JQuery, and AnimeJs into the Symfony project might have required additional configuration and setup. I tackled this by following best practices and leveraging Symfony's asset management capabilities to efficiently include and manage frontend resources.",
+                "section_id": "site_card",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "github": "https://github.com/LukiaschenkoDmitriy/Site-Card/tree/dev"
+            },
+            "site_card_2": {
+                "title": "Portfolio",
+                "description": "I recently created a new portfolio for my profile. I used the same technologies as in the first version. Changes were made to the twig templates, all templates are universal and reusable, which allowed us to reduce the development of the site and reduce the number of templates by 3-4 times. Added a context mechanism, like in ShopWare 6, but implemented in its own way. Each page is filled with its own context and displays only the necessary information for the page. Added translations. Convenient addition of new blocks, such as skills, projects, contacts.",
+                "section_id": "portfolio",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "github": "https://github.com/LukiaschenkoDmitriy/Portfolio"
+            },
+            "wchat": {
+                "title": "WChat",
+                "description": "My second, more complex project, which is still in development. Technologies used: Symfony, Doctrine ORM, SASS, Twig, Mercure, React, TypeScript, ApiPlatform. Challenges I faced: Incorporating ApiPlatform alongside Symfony might have introduced challenges in terms of setting up RESTful APIs, handling data serialization/deserialization, and ensuring compatibility with React frontend. Developing complex API endpoints to cater to various frontend requirements and business logic could have been challenging. Integrating React frontend with ApiPlatform backend while using TypeScript might have required additional effort to ensure type safety and consistency across the application.",
+                "section_id": "wchat",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "github": "https://github.com/LukiaschenkoDmitriy/WChat",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                }
+            },
+            "soleni": {
+                "title": "Soleni",
+                "description": "An online store built on the Shopware 6 framework. Primarily, I worked on frontend development and rewriting some plugins both in the administration panel using Vue.js and on the client side using pure JavaScript. Challenges I encountered: Grasping concepts such as component structure, component interaction, data flow, and the Vuex store might have been challenging, especially if transitioning from other frameworks or libraries. Understanding the concept of context and repositories in the context of Shopware 6's architecture might have posed challenges, particularly in terms of integrating custom functionality into the existing system. ",
+                "section_id": "soleni",
+                "color": "#fff",
+                "icon": "/images/skills/icons/shopware.png",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "github": ""
+            },
+            "getzoo": {
+                "title": "GetZoo",
+                "description": "An online store built on the Shopware 6 framework. I primarily focused on frontend development and rewriting certain plugins, both in the administration panel using Vue.js and on the client side using pure JavaScript. In this project, there were significantly more plugins, and I was also responsible for their configuration and appearance",
+                "section_id": "getzoo",
+                "color": "#fff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "icon": "/images/skills/icons/shopware.png",
+                "github": ""
+            }
+        }
+    },
+    "experience": {
+        "title": "Experience",
+        "router": "app.experience",
+        "description": "EXPERIENCE </>",
+        "background": "/images/experience-bg.png",
+        "sections": {
+            "freelance": {
+                "title": "Freelance",
+                "section_id": "freelance",
+                "description": "I worked on developing the frontend portion of online stores using Shopware 6 technology for the German market for 4 months.",
+                "icon": "/images/skills/icons/shopware.png",
+                "color": "#fff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "Contacts",
+        "sections": {
+            "facebook": {
+                "title": "Facebook",
+                "type": "link",
+                "url": "https://www.facebook.com/dmLukiaschenko/"
+            },
+            "instagram": {
+                "title": "Instagram",
+                "type": "link",
+                "url": "https://www.instagram.com/d1imjear/"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "type": "link",
+                "url": "https://www.linkedin.com/in/dmytrii-lukiashchenko-490987282/"
+            },
+            "github": {
+                "title": "GitHub",
+                "type": "link",
+                "url": "https://github.com/LukiaschenkoDmitriy"
+            },
+            "telegram": {
+                "title": "Telegram",
+                "type": "link",
+                "url": "https://t.me/dmlukiashchenko"
+            },
+            "phone_ua": {
+                "title": "380685224036",
+                "type": "phone",
+                "url": "0685224036"
+            },
+            "phone_pl": {
+                "title": "48883757093",
+                "type": "phone",
+                "url": "883757093"
+            },
+            "email": {
+                "title": "Email",
+                "type": "email",
+                "url": "lukiaschenkoff@gmail.com"
+            }
+        }
+    },
+    "send_message": {
+        "title": "Send Message",
+        "router": "app.send_message",
+        "description": "SEND MESSAGE </>",
+        "background": "/images/send-message-bg.png",
+        "form": {
+            "name": "Your name*",
+            "email": "Your email*",
+            "theme": "Theme*",
+            "message": "Message",
+            "submit": "SEND MESSAGE"
+        },
+        "error" : {
+            "name": "Name is required",
+            "email": "Email is required",
+            "theme": "Theme is required",
+            "message": "Message is required",
+            "invalid_email": "Invalid email address"
+        },
+        "success": "Message sent successfully"
+    }
+}

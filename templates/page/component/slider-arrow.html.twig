@@ -1,0 +1,15 @@
+{% block splide_arrows %}
+    <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+            {% block splide_arrow_prev_icon %}
+                <img src="{{ asset("/images/icons/arrow-icon.png") }}" alt="">
+            {% endblock %}
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+            {% block splide_arrow_next_icon %}
+                <img src="{{ asset("/images/icons/arrow-icon.png") }}" alt="">
+            {% endblock %}
+        </button>
+    </div>
+{% endblock %}
+

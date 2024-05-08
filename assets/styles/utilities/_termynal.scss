@@ -1,0 +1,23 @@
+.termynal-container {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: $ebony;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        #termynal {
+            max-height: 650px;
+            overflow: hidden;
+
+            .green {
+                color: #0fbf44;
+            }
+        }
+    }
+}

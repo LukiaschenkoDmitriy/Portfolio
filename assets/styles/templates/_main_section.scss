@@ -1,0 +1,62 @@
+.main-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    .background {
+        position: absolute;
+        z-index: -10;
+        height: 100%;
+        width: 100%;
+        filter: brightness(50%);
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container-wrapper {
+            margin: 0px 250px;
+
+            .default_main_description {
+                font-size: 6vw;
+            }
+
+            .description{
+                text-align: center;
+                color: white;
+                font-size: 8vh;
+
+                strong {
+                    font-family: "Ubuntu", sans-serif;
+                }
+
+                .name {
+                    color: $midnight-blue-lightest;
+                }
+
+                .work {
+                    color: $sunset-red-base;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main-section {
+        .background {
+            height: 100%;
+            width: auto;
+        }
+
+        .container {
+            .container-wrapper {
+                .default_main_description {
+                    font-size: 14vw;
+                }
+            }
+        }
+    }
+}

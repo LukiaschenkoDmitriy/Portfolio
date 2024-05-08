@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% set key = null %}
+{% for page_key in context.header|keys %}
+    {% if context[page_key] is defined and context[page_key] != null %}
+        {% set key = page_key %}
+    {% endif %}
+{% endfor %}
+
+{% set page = context[key] %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block body %}
+    {% include 'header-mobile.html.twig' %}
+    {% include 'header.html.twig' %}
+    {% include 'base/left-bar.html.twig' %}
+    {% include 'base/right-bar.html.twig' %}
+    {% include 'page/layout/main-section.html.twig' %}
+
+    {% if page.sections is defined and page.sections is not null %}
+        {% set sections = page.sections %}
+
+        {% include 'page/layout/sections.html.twig' %}
+    {% endif %}
+
+    {% if page.form is defined and page.form is not null %}
+        {% include 'page/layout/form.html.twig' %}
+    {% endif %}
+
+    {% include 'footer.html.twig' %}
+{% endblock %}

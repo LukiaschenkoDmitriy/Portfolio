@@ -1,0 +1,90 @@
+<div class="section form-section">
+    <div class="container">
+        <div class="container-wrapper">
+            {% block section_form_title %}
+                <div class="title">{{ page.title }}</div>
+            {% endblock %}
+            {% block section_form %}
+            
+                <form id="send-form" action="{{ path(context.send_message.router ~ ".post") }}" method="POST">
+                    {% if context.success is defined %}
+                        {% block form_success %}
+                            <div class="success-send">{{ context.success }}</div>
+                        {% endblock %}
+                    {% endif %}
+                    {% set section = page.form %}
+                    {% block section_input_groups %}
+                        <div class="form-group">
+                            {% block section_input_name %}
+                                <label for="form_name">{{ section.name }}</label>
+                                {% if context.error.name is defined %}
+                                    {% block section_input_name_error %}
+                                        <div class="input-error">{{ context.error.name }}</div>
+                                    {% endblock %}
+                                {% endif %}
+                                <input type="text" class="form-control" id="form_name" name="name" placeholder="{{ section.name }}" value="{% if cache.name is defined %}{{ cache.name }}{% endif %}">
+                            {% endblock %}
+                        </div>
+                        <div class="form-group">
+                            {% block section_input_email %}
+                                <label for="form_email">{{ section.email }}</label>
+                                {% if context.error.email is defined %}
+                                    {% block section_input_error %}
+                                        <div class="input-error">{{ context.error.email }}</div>
+                                    {% endblock %}
+                                {% endif %}
+                                <input type="email" class="form-control" id="form_email" name="email" placeholder="{{ section.email }}" value="{% if cache.email is defined %}{{ cache.email }}{% endif %}">
+                            {% endblock %}
+                        </div>
+                        <div class="form-group">
+                            {% block section_input_theme %}
+                                <label for="form_theme">{{ section.theme }}</label>
+                                {% if context.error.theme is defined %}
+                                    {% block section_input_theme_error %}
+                                        <div class="input-error">{{ context.error.theme }}</div>
+                                    {% endblock %}
+                                {% endif %}
+                                <input type="text" class="form-control" id="form_theme" name="theme" placeholder="{{ section.theme }}" value="{% if cache.theme is defined %}{{ cache.theme }}{% endif %}">
+                            {% endblock %}
+                        </div>
+                        <div class="form-group">
+                            {% block section_input_message %}
+                                <label for="form_message">{{ section.message }}</label>
+                                {% if context.error.message is defined %}
+                                    {% block section_input_message_error %}
+                                        <div class="input-error">{{ context.error.message }}</div>
+                                    {% endblock %}
+                                {% endif %}
+                                <textarea type="text" class="form-control" id="form_message" name="message" rows="10" placeholder="{{ section.message }}">{% if cache.message is defined %}{{ cache.message }}{% endif %}</textarea>
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+                    {% block section_submit_button %}
+                        <button class="btn g-recaptcha"
+                            data-sitekey="6LeJG8cpAAAAANdIDzG_FgOOC_-6Xdl1u9zBqBaE"
+                            data-callback='onSubmit'
+                            data-action='submit'>
+                        {{ section.submit }}
+                        </button>
+                    {% endblock %}
+                </form>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% block section_form_recaptcha_script %}
+    <script>
+        function onSubmit(token) {
+            document.getElementById("send-form").submit();
+        }
+    </script>
+    {% if context.error is defined and context.error != null %}
+        <script>
+            window.addEventListener('load', function() {
+                console.log(window.app);
+                window.app.smoothScrollToElementById("#send-form");
+            });
+        </script>
+    {% endif %}
+{% endblock %}

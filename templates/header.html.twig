@@ -1,0 +1,37 @@
+<nav class="header">
+    <div class="container">
+        <div class="header-mobile-button">
+            <div id="header-mobile-button-show" class="button">
+                <div class="header-mobile-line-1"></div>
+                <div class="header-mobile-line-2"></div>
+                <div class="header-mobile-line-3"></div>
+            </div>
+        </div>
+        <div class="header-container-wrapper" >
+            <div class="logo"><a href="/">Portfolio</a></div>
+            <div class="buttons">
+                {% for page in context.header %}
+                    <div class="button button-header-link">
+                        <a class="link" href="{{ path(page.router) }}">{{ page.title }}</a>
+                        <div class="subcategories" id="subcategories">
+                            {% if page.type is defined and page.type == "slider" %}
+                                {% set section_index = 0 %}
+                                {% for section in page.sections %}
+                                    <a href="{{ path(page.router ~ ".index", {"id": section_index}) }}">{{ section.title }}</a>
+                                    {% set section_index = section_index + 1 %}
+                                {% endfor %}
+                            {% else %}
+                                {% for section in page.sections %}
+                                    <a href="{{ path(page.router) }}#{{ section.section_id }}">{{ section.title }}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="languages">
+                {% include 'page/component/language-switcher.html.twig' %}
+            </div>
+        </div>
+    </div>
+</nav>

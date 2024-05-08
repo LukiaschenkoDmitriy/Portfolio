@@ -1,0 +1,441 @@
+{
+    "about": {
+        "title": "Про мене",
+        "description": "Привіт, мене звати / Дмитрій / і я / Full-stack / програміст.",
+        "router": "app.about.ua",
+        "background": "images/about/homebackground.png",
+        "sections": {
+            "about_me": {
+                "title": "Про мене",
+                "section_id": "about_me",
+                "description": "Привіт! Мене звати Дмитрій, мені 19 років і я з великою зацікавленістю кодую вже 4 роки.",
+                "media": "images/about/photo.jpg",
+                "color": "#1E1B18",
+                "background": {
+                    "image": "",
+                    "color": "#ffffff"
+                }
+            },
+            "education": {
+                "title": "Освіта",
+                "section_id": "education",
+                "description": "Я навчаюсь у вищій школуі підприємництва та адміністрації у Любліні протягом 2 років, зосереджуючись на програмуванні веб-сайтів.",
+                "media": "images/about/wspa.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "images/about/education-bg.png",
+                    "color": "#1E1B18"
+                }
+            },
+            "languages": {
+                "title": "Мови",
+                "section_id": "languages",
+                "description": "Я володію 4 мовами: українською, російською, польською, англійською.",
+                "color": "#1E1B18",
+                "background": {
+                    "image": "",
+                    "color": "#ffffff"
+                },
+                "columns": {
+                    "ukraine": {
+                        "title": "Українська",
+                        "rate": "9"
+                    },
+                    "russian": {
+                        "title": "Російська",
+                        "rate": "7"
+                    },
+                    "polish": {
+                        "title": "Польська",
+                        "rate": "5"
+                    },
+                    "english": {
+                        "title": "Англійська",
+                        "rate": "4"
+                    }
+                }
+            },
+            "personal_skills": {
+                "title": "Особисті навички",
+                "section_id": "personal_skills",
+                "description": "Я відповідальний, уважний та комунікабельний.",
+                "color": "#ffffff",
+                "background": {
+                    "image": "images/about/personal-bg.png",
+                    "color": "#1E1B18"
+                },
+                "columns": {
+                    "responsibility": {
+                        "title": "Відповідальність",
+                        "rate": "7"
+                    },
+                    "mindfulness": {
+                        "title": "Уважність",
+                        "rate": "6"
+                    },
+                    "communication": {
+                        "title": "Комунікабельність",
+                        "rate": "6"
+                    },
+                    "teamwork": {
+                        "title": "Командна робота",
+                        "rate": "7"
+                    }
+                }
+            }
+        }
+    },
+    "skills": {
+        "title": "Навички",
+        "description": "НАВИЧКИ </>",
+        "router": "app.skills.ua",
+        "background": "/images/skills/skills-bg.png",
+        "sections": {
+            "php": {
+                "title": "PHP",
+                "description": "Основна мова програмування. Відмінне розуміння написання оптимального коду з коментарями. Відмінне розуміння ООП і деяких патернів, таких як Одинак, Спостерігач, Фабрика, Декоратор. Знання пакетів, таких як Mercure, JWT Lexik, Symfony, Twig, Doctrine ORM, API Platform. Розуміння протоколів HTTP, HTTPS та їх механіки.",
+                "section_id": "php",
+                "icon": "/images/skills/icons/php.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "symfony": {
+                "title": "Symfony",
+                "description": "Ядро веб-сайту. Маю знання щодо створення та налаштування маршрутів, внедрення залежностей, методів входу за допомогою JWT, JSON. Знаю, як створювати сутності Doctrine ORM та налаштовувати методи пошуку для цього об'єкту за допомогою репозиторію сутностей. З'єднання Doctrine ORM з API Platform, переписування маршрутів API Platform. Володію базовими навичками тестування.",
+                "section_id": "symfony",
+                "icon": "/images/skills/icons/symfony.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            },
+            "sass": {
+                "title": "Sass",
+                "description": "Препроцесор, який я використовую в кожному з моїх проектів, у деяких випадках поєдную його з препроцесором Bootstrap, а рідше з Tailwind. Маю вміння детально аналізувати Figma або будь-який інший шаблон веб-сайту та писати стилі для елементу на льоту, які будуть найбільш ефективними для майбутньої адаптації сайту.",
+                "section_id": "sass",
+                "icon": "/images/skills/icons/sass.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "react": {
+                "title": "React",
+                "description": "Нещодавно я глибоко вдався у бібліотеку React, мотивований бажанням навчатися для свого особистого проекту - односторінкового сайту. Я успішно інтегрував і використовував React разом з Symfony, розуміючи його компоненти, шаблони та маршрути. Ця комбінація дозволила мені створювати динамічні та інтерактивні веб-сайти, поєднуючи сильні сторони фронтенду React з потужністю Symfony на бекенді.",
+                "section_id": "react",
+                "icon": "/images/skills/icons/react.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "2"
+            },
+            "tailwind": {
+                "title": "Tailwind",
+                "description": "Вміло володію Tailwind CSS з метою створення сучасних та адаптивних інтерфейсів користувача. Завдяки Tailwind можу швидко створювати та налаштовувати компоненти інтерфейсу користувача за допомогою класів-інструментів, що призводить до ефективного та легкого в обслуговуванні коду.",
+                "section_id": "tailwind",
+                "icon": "/images/skills/icons/tailwind.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "twig": {
+                "title": "Twig",
+                "description": "Шаблони Symfony: Знаю методи та функції системи шаблонування Symfony. Вмію створювати та використовувати власні функції за потребою. Мої навички включають роботу зі списками, словниками, рядками та числами у шаблонах. Володію використанням циклів 'for' та 'if-else' для управління логікою та потоком в шаблонах. Додатково, я вмію використовувати та розширювати шаблони для підтримки їхньої злагодженості та ефективності у проектах.",
+                "section_id": "twig",
+                "icon": "/images/skills/icons/twig.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "scrum": {
+                "title": "Scrum",
+                "description": "Я добре знайомий зі Scrum в управлінні проектами за методологією Agile. Завдяки моєму досвіду в Scrum, я можу ефективно керувати своїм часом та завданнями, що сприяє роботі в команді та співпраці. Також я маю досвід використання інструментів Scrum, таких як Jira, для відстеження прогресу та керування беклогом.",
+                "section_id": "scrum",
+                "icon": "/images/skills/icons/scrum.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "6"
+            },
+            "doctrine": {
+                "title": "Doctrine",
+                "description": "Я досить знайомий з Doctrine ORM як зручним способом взаємодії з базами даних на серверній стороні в Symfony. Мій досвід включає створення та налаштування сутностей, репозиторіїв, а також використання Assert для валідації даних. Завдяки Doctrine ORM я можу ефективно відображати таблиці баз даних на об'єкти PHP, писати запити за допомогою Doctrine Query Language (DQL) та ефективно керувати операціями з базою даних.",
+                "section_id": "doctrine",
+                "icon": "/images/skills/icons/doctrine.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            },
+            "bootstrap": {
+                "title": "BootStrap 5",
+                "description": "Відмінне знання Bootstrap 5 з метою створення адаптивних та привабливих візуально проектів в Інтернеті. Мій досвід включає налаштування тем Bootstrap, реалізацію сіткових макетів та забезпечення міжпереглядачної сумісності. Мій досвід з Bootstrap 5 дозволяє мені ефективно створювати елегантні та адаптивні веб-застосунки, що відповідають останнім стандартам дизайну веб-сайтів.",
+                "section_id": "bootstrap",
+                "icon": "/images/skills/icons/bootstrap.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "mysql": {
+                "title": "MySQL",
+                "description": "Майже кожен проект потребує MySQL на певному етапі. Хоча головним чином я спираюся на Doctrine ORM для взаємодії з базами даних у проектах, іноді виникають ситуації, коли безпосередні запити MySQL необхідні для розширення або модифікації таблиць. Тому я маю необхідні знання в галузі MySQL для виконання таких завдань.",
+                "section_id": "mysql",
+                "icon": "/images/skills/icons/mysql.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "vuejs": {
+                "title": "VueJs",
+                "description": "Я зосередився на вивченні Vue.js спеціально для фреймворка Shopware, який використовує Vue.js для своєї адміністративної панелі. Були ситуації, коли мені доводилося або переписувати, або розробляти нові плагіни для адміністративної панелі, тому я здобув необхідні знання в роботі з Vue.js.",
+                "section_id": "vuejs",
+                "icon": "/images/skills/icons/vuejs.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "2"
+            },
+            "git": {
+                "title": "Git",
+                "description": "Маю базові знання Git для контролю версій, що дозволяє мені ефективно співпрацювати та відстежувати зміни в проекті. Легко виконую такі завдання, як rebase, fetch та створення запитів на злиття, щоб оптимізувати процес розробки.",
+                "section_id": "git",
+                "icon": "/images/skills/icons/git.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "4"
+            },
+            "shopware": {
+                "title": "Shopware 6",
+                "description": "Я маю досвід роботи з Shopware 6, який включає навички, такі як створення нових шаблонів 'storefront', переписування існуючих, розробка плагінів, налаштування маршрутів та управління взаємодіями з базою даних. Цей досвід дозволяє мені будувати спеціалізовані рішення, які відповідають конкретним потребам проекту в екосистемі Shopware.",
+                "section_id": "shopware",
+                "icon": "/images/skills/icons/shopware.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "3"
+            },
+            "docker": {
+                "title": "Docker",
+                "description": "У Docker я маю базові навички, такі як створення образів за допомогою файлів Dockerfile, управління контейнерами, розуміння мережевої та томільної моделі контейнерів. Вмію створювати файли Docker Compose для багатоконтейнерних конфігурацій, завантажувати та відправляти образи з Docker Hub.",
+                "section_id": "docker",
+                "icon": "/images/skills/icons/docker.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "2"
+            },
+            "apiplatform": {
+                "title": "ApiPlatform",
+                "description": "Мої знання щодо API Platform в Symfony включають розуміння принципів проектування RESTful API, створення кінцевих точок API за допомогою анотацій, управління моделями даних за допомогою Doctrine ORM, серіалізацію та десеріалізацію даних за допомогою Serializer в Symfony, налаштування пагінації, фільтрації та сортування відповідей API, реалізацію аутентифікації та авторизації.",
+                "section_id": "apiplatform",
+                "icon": "/images/skills/icons/apiplatform.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "level": "4"
+            },
+            "typescript": {
+                "title": "TypeScript",
+                "description": "У TypeScript я досяг більшої майстерності у написанні безпечного для типів коду для виявлення помилок під час створення. Вмію визначати інтерфейси та типи для складних структур даних, використовувати функції TypeScript, такі як enum, generics та декоратори, а також інтегрувати TypeScript без проблем з фреймворками, такими як React і VueJs. Крім того, я використовую переваги TypeScript в додатках великого масштабу, щоб забезпечити стабільніше та безпечніше управління кодом.",
+                "section_id": "typescript",
+                "icon": "/images/skills/icons/typescript.png",
+                "color": "#ffffff",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "level": "3"
+            }
+        }
+    },
+    "projects": {
+        "title": "Проекти",
+        "router": "app.projects.ua",
+        "background": "/images/projects-bg.png",
+        "description": "ПРОЕКТИ </>",
+        "sections": {
+            "site_card": {
+                "title": "Site Card v1.0",
+                "description": "Мій перший проект у Symfony. Портфоліо веб-сайту. Використані технології: Symfony, Doctrine ORM, Twig, SASS, Tailwind, JQuery, AnimeJs. Виклики, з якими я можу зіткнутися: Розуміння структури Symfony та її компонентів може бути складним. Для подолання цього я ретельно вивчав документацію Symfony. Інтеграція SASS, Tailwind, JQuery та AnimeJs у проект Symfony може вимагати додаткової конфігурації та налаштувань. Я впорався з цим, застосовуючи найкращі практики та використовуючи можливості керування ресурсами Symfony для ефективного включення та управління фронтенд-ресурсами.",
+                "section_id": "site_card",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "github": "https://github.com/LukiaschenkoDmitriy/Site-Card/tree/dev"
+            },
+            "site_card_2": {
+                "title": "Portfolio",
+                "description": "Недавно створена сторінка портфоліо, для свого профіля. Використав тіж самі технології що й в першій версії. Зміни перенесли шаблони twig. Всі шаблони універсальні та використовуються повторно, що позволило скороти розробку сайта, та зменшити кількість шаблонів в 3-4 раза. Добавлений механізм контекста, як в ShopWare 6, але реалізований по своєму. Кожна сторінка заповнюється своїм контекстом та відображає лише потрібну інформацію для сторінки. Добавлені переклади. Зручне додавання нових блоків, таких як навички, проекти, контакти.",
+                "section_id": "portfolio",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "github": "https://github.com/LukiaschenkoDmitriy/Portfolio"
+            },
+            "wchat": {
+                "title": "WChat",
+                "description": "Мій другий, більш складний проект, який все ще знаходиться в процесі розробки. Використані технології: Symfony, Doctrine ORM, SASS, Twig, Mercure, React, TypeScript, ApiPlatform. Виклики, з якими я стикався: Включення ApiPlatform поруч з Symfony могло викликати виклики щодо конфігурації REST API інтерфейсів, обробки серіалізації/десеріалізації даних та забезпечення сумісності з фронтенд-інтерфейсом React. Створення складних кінцевих точок API для задоволення різних вимог фронтенду та бізнес-логіки може бути складним. Інтеграція фронтенд-інтерфейсу React з бекенд-інтерфейсом ApiPlatform за допомогою TypeScript може потребувати додаткових зусиль для забезпечення безпеки типів та консистентності у всій програмі.",
+                "section_id": "wchat",
+                "color": "#fff",
+                "icon": "/images/skills/icons/symfony.png",
+                "github": "https://github.com/LukiaschenkoDmitriy/WChat",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                }
+            },
+            "soleni": {
+                "title": "Soleni",
+                "description": "Інтернет-магазин, побудований на основі фреймворку Shopware 6. Головною частиною моєї роботи було працювати над фронтендом та вдосконалювати деякі плагіни як у адміністративній панелі за допомогою Vue.js, так і на клієнтській стороні за допомогою чистого JavaScript. Виклики, з якими я стикався: Розуміння концепцій структури компонентів, їх взаємодії, потоку даних та сховища Vuex могло бути складним, особливо при переході з інших фреймворків або бібліотек. Розуміння концепцій контексту та репозиторіїв у контексті архітектури Shopware 6 могло створювати виклики, особливо щодо інтеграції власного функціоналу з існуючою системою.",
+                "section_id": "soleni",
+                "color": "#fff",
+                "icon": "/images/skills/icons/shopware.png",
+                "background": {
+                    "image": "",
+                    "color": "#023047"
+                },
+                "github": ""
+            },
+            "getzoo": {
+                "title": "GetZoo",
+                "description": "Інтернет-магазин, побудований на основі фреймворку Shopware 6. Головним чином я зосередився на створенні фронтенду та вдосконаленні певних плагінів як у адміністративній панелі за допомогою Vue.js, так і на клієнтській стороні за допомогою чистого JavaScript. У цьому проекті було набагато більше плагінів, і я також відповідав за їх конфігурацію та вигляд.",
+                "section_id": "getzoo",
+                "color": "#fff",
+                "background": {
+                    "image": "",
+                    "color": "#1E1B18"
+                },
+                "icon": "/images/skills/icons/shopware.png",
+                "github": ""
+            }
+        }
+    },
+    "experience": {
+        "title": "Досвід",
+        "router": "app.experience.ua",
+        "description": "ДОСВІД </>",
+        "background": "/images/experience-bg.png",
+        "sections": {
+            "freelance": {
+                "title": "Фріланс",
+                "section_id": "freelance",
+                "description": "Працював над розширенням частини фронтенду інтернет-магазинів з використанням технологій Shopware 6 на німецький ринок протягом 4 місяців.",
+                "icon": "/images/skills/icons/shopware.png",
+                "color": "#fff",
+                "background": {
+                "image": "",
+                "color": "#1E1B18"
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "Контакти",
+        "sections": {
+            "facebook": {
+                "title": "Facebook",
+                "type": "link",
+                "url": "https://www.facebook.com/dmLukiaschenko/"
+            },
+            "instagram": {
+                "title": "Instagram",
+                "type": "link",
+                "url": "https://www.instagram.com/d1imjear/"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "type": "link",
+                "url": "https://www.linkedin.com/in/dmytrii-lukiashchenko-490987282/"
+            },
+            "github": {
+                "title": "GitHub",
+                "type": "link",
+                "url": "https://github.com/LukiaschenkoDmitriy"
+            },
+            "telegram": {
+                "title": "Telegram",
+                "type": "link",
+                "url": "https://t.me/dmlukiashchenko"
+            },
+            "phone_ua": {
+                "title": "380685224036",
+                "type": "phone",
+                "url": "0685224036"
+            },
+            "phone_pl": {
+                "title": "48883757093",
+                "type": "phone",
+                "url": "883757093"
+            },
+            "email": {
+                "title": "Email",
+                "type": "email",
+                "url": "lukiaschenkoff@gmail.com"
+            }
+        }
+    },
+    "send_message": {
+        "title": "Відправити повідомлення",
+        "router": "app.send_message.ua",
+        "description": "ВІДПРАВИТИ ПОВІДОМЛЕННЯ </>",
+        "background": "/images/send-message-bg.png",
+        "form": {
+            "name": "Ваше ім'я*",
+            "email": "Ваша електронна пошта*",
+            "theme": "Тема*",
+            "message": "Повідомлення",
+            "submit": "ВІДПРАВИТИ ПОВІДОМЛЕННЯ"
+        },
+        "error": {
+            "name": "Ім'я обов'язкове",
+            "email": "Електронна пошта обов'язкова",
+            "theme": "Тема обов'язкова",
+            "message": "Повідомлення обов'язкове",
+            "invalid_email": "Неправильна адреса електронної пошти"
+        },
+        "success": "Повідомлення успішно відправлено"
+    }
+}

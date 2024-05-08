@@ -1,0 +1,8 @@
+<div class="language-switcher">
+    <div class="buttons">
+        {% set available_locals = ["en","pl","ua"] %}
+        {% for local in available_locals %}
+            <a class="{% if context.locale == local %}active{% endif %}" href="{{ path("app.language.switcher", { locale:local }) }}"><strong>{{ local|upper }}</strong></a>
+        {% endfor %}
+    </div>
+</div>

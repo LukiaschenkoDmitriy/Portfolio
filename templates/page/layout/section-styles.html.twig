@@ -1,0 +1,44 @@
+{% if section.background.color is defined and section.background.color is not null and section.background.color != "" %}
+    <style>
+        .section-{{section_key}} {
+            background: {{ section.background.color }};
+        }
+    </style>
+{% endif %}
+
+<style>
+    .{{section_key}}-title {
+        color: {{ section.color }} !important;
+    }
+    
+    .{{section_key}}-description {
+        color: {{ section.color }} !important;
+    }
+
+    .{{section_key}}-underline {
+        background: {{ section.color }} !important;
+    }
+
+    {}
+</style>
+
+{% if section.level is defined and section.level is not null and section.level != "" %}
+    <style>
+        .level-{{section_key}} {
+            margin: 30px 0px;
+            width: 80%;
+            height: 20px;
+            position: relative;
+        }
+
+        .level-{{section_key}}::before {
+            content: "";
+            position: absolute;
+            width: {{section.level|number_format}}0%;
+            height: 20px;
+            background: #FE4A49;
+        }
+
+        {}
+    </style>
+{% endif %}

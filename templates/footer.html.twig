@@ -1,0 +1,35 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer-wrapper row">
+            {% set headerContext = context.footer.header %}
+
+            {% for page in headerContext %}
+                <div class="button button-footer-link col">
+                    <a class="link" href="{{ path(page.router) }}">{{ page.title }}</a>
+                    <div class="row" id="">
+                        {% if page.type is defined and page.type == "slider" %}
+                            {% set section_index = 0 %}
+                            {% for section in page.sections %}
+                                <a href="{{ path(page.router ~ ".index", {"id": section_index}) }}">{{ section.title }}</a>
+                                {% set section_index = section_index + 1 %}
+                            {% endfor %}
+                        {% else %}
+                            {% for section in page.sections %}
+                                <a href="{{ path(page.router) }}#{{ section.section_id }}">{{ section.title }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div> 
+            {% endfor %}
+            <div class="button button-footer-link col">
+                {% set page = context["contact"] %}
+                <a class="link" href="#">{{ page.title }}</a>
+                <div class="row" id="">
+                    {% for section in page.sections %}
+                        <a href="{% if section.type == "phone" %}tel:{% endif %}{% if section.type == "email" %}mailto:{% endif %}{{ section.url }}" target="_blank">{{ section.title }}</a>
+                    {% endfor %}
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
